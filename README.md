@@ -4,6 +4,8 @@
  
 The project demonstrates how to write unit tests for a class to detect if it causes memory leak. Download the project and open in Xcode. Run all the tests, using shortcut Command-U, to see failing test in class “WithMemoryLeakUnitTests” which indicates memory leak in class under test “WithMemoryLeak”
 
+![Screenshot 2020-12-31 at 6 56 06 AM](https://user-images.githubusercontent.com/3737339/103390375-ee66da80-4b35-11eb-83a6-4b335bd29a03.png)
+
 Why Memory Leak?
 
 Objects of classes “WithMemoryLeak” and “Service” hold strong references to each other which leads to reference cycle.
