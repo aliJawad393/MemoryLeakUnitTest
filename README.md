@@ -1,6 +1,7 @@
 # MemoryLeakUnitTest
 
  Unit Test to detect Memory Leaks
+ 
 The project demonstrates how to write unit tests for a class to detect if it causes memory leak. Download the project and open in Xcode. Run all the tests, using shortcut Command-U, to see failing test in class “WithMemoryLeakUnitTests” which indicates memory leak in class under test “WithMemoryLeak”
 
 Why Memory Leak?
