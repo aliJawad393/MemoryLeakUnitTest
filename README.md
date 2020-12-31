@@ -15,3 +15,5 @@ How is it detected using Unit Test?
 In class WithMemoryLeakUnitTests, we hold a weak reference to System under Test(sut) on line no 17. We are asserting for the weak reference to be nil in tearDown method(line no 11) which is invoked after every test. Ideally, this assertion should pass as the sut object should go away from memory after the test “testMemoryLeak” is completed. In real, the object is not nil because retain cycle keeps it in memory which leads to failed test.
 
 On the contrary, the “testMemoryLeak” test in class “WithoutMemoryLeakUnitTests” passes because class under test “WithoutMemoryLeak” does not have memory leak, as a result, nil assertion on line no 9 is passed. Any future changes causing memory leak will make the test to fail.
+
+![Screenshot 2020-12-31 at 7 11 50 AM](https://user-images.githubusercontent.com/3737339/103390647-78fc0980-4b37-11eb-836c-2e9624cbdb34.png)
